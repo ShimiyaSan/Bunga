@@ -1,0 +1,200 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.book {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.book .page1 .content{
+  font-weight: 1000;
+}
+.book .page2 .content{
+  font-weight: 1000;
+  color: white;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.book {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  perspective: 1000px;
+}
+
+.book .page1 .content{
+  font-weight: 1000;
+}
+.book .page2 .content{
+  font-weight: 1000;
+  color: white;
+}
+
+.book .page1 .content img{
+  width: 70px;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fffdd7;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform-origin: left;
+  transition: transform 1s, opacity 1s;
+}
+
+.page1 {
+  z-index: 2;
+  line-height: 1.8;
+}
+
+.page2 {
+  position: absolute;
+  transform: rotateY(90deg);
+  transition: opacity 0.3s ease;
+  background: #010101;
+  opacity: 0;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.page2.zoom {
+  transform: scale(2); /* Adjust scale as desired */
+  transition: transform 1s ease-in-out; /* Smooth zoom effect */
+}
+
+#animasi {
+    position: fixed; /* Cover the entire screen */
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    display: none; /* Hidden by default */
+    background-color: transparent; /* Adjust as needed */
+}
+
+
+#animasi.fullscreen {
+  position: fixed;
+  background-color: #010101;
+  z-index: 1000;
+  animation: fullscreenAnimasi .6s forwards;
+}
+
+@keyframes fullscreenAnimasi {
+  from {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    
+  }
+  to {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+￼Enter.book .page1 .content img{
+  width: 70px;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fffdd7;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform-origin: left;
+  transition: transform 1s, opacity 1s;
+}
+
+.page1 {
+  z-index: 2;
+  line-height: 1.8;
+}
+
+.page2 {
+  position: absolute;
+  transform: rotateY(90deg);
+  transition: opacity 0.3s ease;
+  background: #010101;
+  opacity: 0;
+dex: 1;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.page2.zoom {
+  transform: scale(2); /* Adjust scale as desired */
+  transition: transform 1s ease-in-out; /* Smooth zoom effect */
+}
+
+#animasi {
+    position: fixed; /* Cover the entire screen */
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left: 0; 
+    display: none; /* Hidden by default */
+    background-color: transparent; /* Adjust as needed */
